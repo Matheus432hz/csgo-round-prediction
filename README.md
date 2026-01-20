@@ -4,6 +4,8 @@ This project implements an end-to-end Machine Learning Pipeline to predict the w
 
 The goal was to build a robust, production-ready pipeline that prevents data leakage and ensures reproducibility using industry best practices.
 
+*Note: This project was developed as part of an advanced Machine Learning academic module, simulating a real-world technical assessment scenario.*
+
 ## Project Overview
 
 The dataset consists of **122,410 round snapshots** extracted from over **700 high-level professional matches**.
@@ -45,3 +47,22 @@ After optimization, the **Random Forest** model achieved the best performance, p
 | **ROC-AUC** | **0.9221** |
 
 **Key Insight:** The model identified that **Team Money** and **Armor/Helmets** variables were often more predictive of a round win than the specific weapons used.
+
+## How to Run
+
+1. **Download the Dataset:**
+   The dataset file is too large for GitHub. Please download it from the source:
+   [Download csgo_round_snapshots.xlsx](https://static.plataforma.grupoa.education/pucpr/111/7ff2afe1-81b8-4b8d-b15a-a77e5b0bc141.zip)
+   *Extract the zip and place `csgo_round_snapshots.xlsx` in the root folder.*
+
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/Matheus432hz/csgo-round-prediction.git
+
+3. Install requirements:
+   ```bash
+   pip install pandas scikit-learn xgboost matplotlib seaborn openpyxl
+
+4. Run the jupyter Notebook:
+   ```bash
+   jupyter notebook csgo_prediction_pipeline.ipynb
